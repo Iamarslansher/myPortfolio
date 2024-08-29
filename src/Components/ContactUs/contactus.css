@@ -1,0 +1,243 @@
+.contactus-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactus-subContainer {
+  width: 80%;
+  height: 80%;
+}
+.contactUs-heading {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(45deg, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leftDiv {
+  width: 40%;
+  height: 100%;
+  margin-left: 130px;
+}
+.leftDiv-heading {
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leftDiv-content {
+  margin-top: 20px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.icons {
+  width: 260px;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+  justify-content: space-between;
+}
+.icon {
+  font-size: 45px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.icon:hover {
+  border: none;
+  transform: translateY(-5px);
+}
+
+.whatsap:hover {
+  background-color: white;
+  color: green;
+}
+.facebook:hover {
+  background-color: white;
+  color: blue;
+}
+.linkedin:hover {
+  background-color: white;
+  color: blue;
+}
+.intagram:hover {
+  background-color: white;
+  color: #f09433;
+}
+
+.rightDiv {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  max-width: 28rem;
+  width: 100%;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: -webkit-linear-gradient(45deg, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.form-label {
+  display: block;
+  color: black;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  padding-left: 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  ring: 2px solid #93c5fd;
+  border-color: #93c5fd;
+}
+
+.form-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 2.25rem;
+  color: #9ca3af;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  padding-left: 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+  resize: vertical;
+}
+
+.form-textarea:focus {
+  outline: none;
+  ring: 2px solid #93c5fd;
+  border-color: #93c5fd;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
+
+.submit-button:focus {
+  outline: none;
+  ring: 2px solid #93c5fd;
+}
+
+.submit-icon {
+  margin-right: 0.5rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .subContainer {
+    display: flex;
+    align-items: center;
+  }
+  .leftDiv-content {
+    margin-top: 20px;
+    line-height: 23px;
+    font-size: 17px;
+  }
+  .leftDiv {
+    width: 40%;
+  }
+
+  .icons {
+    width: 200px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  .icon {
+    font-size: 40px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+  }
+}

@@ -1,0 +1,171 @@
+.skills-container {
+  width: 100%;
+  /* height: auto; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub-skills-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.skill-heading {
+  font-size: 50px;
+  font-weight: 600;
+
+  padding: 20px 10px 70px 10px;
+  background-color: #ff00ff;
+  background-image: linear-gradient(45deg, #ff00ff, #00ffff);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.skill-card {
+  width: 250px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  transition: all 1s;
+  animation: slideDown 2s ease-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
+.skill-card:hover .html {
+  color: orange;
+}
+.skill-card:hover .css {
+  color: blue;
+}
+.skill-card:hover .javascript {
+  color: yellow;
+}
+.skill-card:hover .react {
+  color: aqua;
+}
+.skill-card:hover .bootstrap {
+  color: blue;
+}
+.skill-card:hover .firebase {
+  color: #ff0080d0;
+}
+.skill-card:hover .mongodb {
+  color: green;
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.skill-title-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-percentage {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 85%;
+}
+
+.css_p {
+  height: 100%;
+  background-color: #4caf50;
+  width: 90%;
+}
+.javascript_p {
+  height: 100%;
+  background-color: #4caf50;
+  width: 83%;
+}
+.react_p {
+  height: 100%;
+  background-color: #4caf50;
+  width: 80%;
+}
+.bootstrap_p {
+  height: 100%;
+  background-color: #4caf50;
+  width: 85%;
+}
+.firebase_p {
+  height: 100%;
+  background-color: #4caf50;
+  width: 85%;
+}
+.mongodb_p {
+  height: 100%;
+  background-color: #4caf50;
+  width: 70%;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+}

@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  width: 100%;
+  height: 8vh;
+  background-color: #00d4ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  padding-left: 10px;
+  animation: slide-in 2s ease-out;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  background: -webkit-linear-gradient(45deg, #ff00ff, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list-div {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.anchr-link {
+  text-decoration: none;
+  color: white;
+}
+.list-item {
+  list-style: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+  animation: slide-in 2s ease-out;
+  transition: all 0.4s;
+}
+
+.list-item:hover {
+  transform: translateY(-3px);
+  text-decoration: underline;
+  background: -webkit-linear-gradient(45deg, #ff00ff, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menuBtn {
+  display: none;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* MEDIA-QUERY */
+
+@media (max-width: 768px) {
+  .menuBtn {
+    display: block;
+    position: relative;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .list-div {
+    width: 40%;
+    height: 250px;
+    background: linear-gradient(to top left, #ff00ff, aqua);
+    margin-top: 160px;
+    z-index: 2;
+    border-radius: 2px 0px 10px 10px;
+    position: fixed;
+    right: -300px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .list-item {
+    list-style: none;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    animation: slide-in 2s ease-out;
+    transition: all 0.4s;
+  }
+  .closeMenu {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /* z-index: 200; */
+  }
+}
